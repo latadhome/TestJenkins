@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testjenkins:
+    image: ${DOCKER_REGISTRY}testjenkins
+    build:
+      context: .
+      dockerfile: TestJenkins\Dockerfile
